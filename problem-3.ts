@@ -12,7 +12,7 @@ function countWordOccurrences(sentence: string, word: string): number {
     // Spliting the sentence into an array of words
     const words = lowerCaseSentence.split(" ");
     
-    // Count occurrences of the target word
+    // Counting occurrences of the target word
     let count = 0;
     for (const currentWord of words) {
         if (currentWord === lowerCaseWord) {
@@ -24,4 +24,5 @@ function countWordOccurrences(sentence: string, word: string): number {
 }
 
 
+// Sample Input:
 console.log(countWordOccurrences("I love typescript TyPescript", "typescript"));

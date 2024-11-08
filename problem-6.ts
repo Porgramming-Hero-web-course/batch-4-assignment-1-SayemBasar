@@ -3,7 +3,7 @@
 function updateProfile that accepts an object of type Profile and an object of 
 type Partial representing the updates. The function should return the updated profile.*/
 
-// Define the Profile interface
+// Profile interface
 interface Profile {
     name: string;
     age: number;
@@ -18,6 +18,6 @@ interface Profile {
   // Sample Input
   const myProfile: Profile = { name: "Alice", age: 25, email: "alice@example.com" };
   
-  // Call the updateProfile function with updates
+  // Calling the updateProfile function with updates
   console.log(updateProfile(myProfile, { age: 26 }));
   
