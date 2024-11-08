@@ -1,6 +1,7 @@
 >> The significance of union and intersection types in Typescript.
 
 Union Type (|)
+
 A union type allows a variable to be one of several types. For example, consider Rahim and Karim as two different people. Rahim is a very quick to act, and Karim is the opposite very calm and thoughtful. However, they both work at the same company as web developers and are both skilled in TypeScript. For a project, we might need one of them, so we can consider either Rahim or Karim. we can represent flexibility using a union type.
 
 type Developer = Rahim | Karim;
