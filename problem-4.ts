@@ -15,20 +15,20 @@ type Rectangle = {
 };
 
 // Union type for Circle or Rectangle
-type ShapeType = Circle | Rectangle;
+type Shape = Circle | Rectangle;
 
 // Type guard function to check if the shape is a circle
-function isCircle(shape: ShapeType): shape is Circle {
+function isCircle(shape: Shape): shape is Circle {
     return shape.shape === "circle";
 }
 
 // Type guard function to check if the shape is a rectangle
-function isRectangle(shape: ShapeType): shape is Rectangle {
+function isRectangle(shape: Shape): shape is Rectangle {
     return shape.shape === "rectangle";
 }
 
 // Function to calculate the area based on the shape type
-function calculateShapeArea(shape: ShapeType): number {
+function calculateShapeArea(shape: Shape): number {
     if (isCircle(shape)) {
         return 3.1416 * shape.radius * shape.radius;
     } else if (isRectangle(shape)) {
